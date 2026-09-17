@@ -1,28 +1,22 @@
 {
-  "name": "argus",
-  "private": true,
-  "version": "0.0.0",
+  "name": "sih-157",
+  "version": "1.0.0",
+  "description": "ARGUS — SOC Behavioural Assurance Engine (100% Offline / Air-Gapped)",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.3.3",
-    "canvas-confetti": "^1.9.4",
-    "clsx": "^2.1.1",
-    "lucide-react": "^1.45.0",
-    "react": "^19.2.8",
-    "react-dom": "^19.2.8",
-    "tailwindcss": "^4.3.3"
+    "@hono/node-server": "^2.1.1",
+    "hono": "^4.13.8",
+    "lucide-react": "^1.46.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
   },
   "devDependencies": {
-    "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
-    "oxlint": "^1.81.0",
     "vite": "^8.3.0"
   }
 }

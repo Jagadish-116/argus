@@ -1,33 +1,48 @@
 @import "tailwindcss";
 
-@layer base {
-  :root {
-    --bg-main: #07090e;
-    --bg-surface: #0e131f;
-    --bg-card: #131929;
-    --bg-hover: #1c2438;
-    --border-subtle: #1e293b;
-    --border-bright: #334155;
-    --accent-cyan: #00f0ff;
-    --accent-cyan-dim: rgba(0, 240, 255, 0.15);
-    --accent-crimson: #ef4444;
-    --accent-crimson-dim: rgba(239, 68, 68, 0.15);
-    --accent-amber: #f59e0b;
-    --accent-amber-dim: rgba(245, 158, 11, 0.15);
-    --accent-emerald: #10b981;
-    --accent-emerald-dim: rgba(16, 185, 129, 0.15);
-    --accent-purple: #a855f7;
-    --accent-purple-dim: rgba(168, 85, 247, 0.15);
-  }
+@source "../index.html";
+@source "../src/**/*.{js,ts,jsx,tsx}";
 
-  body {
-    background-color: var(--bg-main);
-    color: #e2e8f0;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-  }
+:root, html, body, #root {
+  background-color: #07090e !important;
+  color: #e2e8f0 !important;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Force dark theme utility mappings */
+.bg-dark-cyber, [class*="bg-[#07090e]"] {
+  background-color: #07090e !important;
+}
+
+.bg-surface-dark, [class*="bg-[#090d16]"] {
+  background-color: #090d16 !important;
+}
+
+.bg-card-dark, [class*="bg-[#0b0f1a]"], [class*="bg-[#0c101d]"] {
+  background-color: #0c101d !important;
+}
+
+:root {
+  --bg-main: #07090e;
+  --bg-surface: #0e131f;
+  --bg-card: #131929;
+  --bg-hover: #1c2438;
+  --border-subtle: #1e293b;
+  --border-bright: #334155;
+  --accent-cyan: #00f0ff;
+  --accent-cyan-dim: rgba(0, 240, 255, 0.15);
+  --accent-crimson: #ef4444;
+  --accent-crimson-dim: rgba(239, 68, 68, 0.15);
+  --accent-amber: #f59e0b;
+  --accent-amber-dim: rgba(245, 158, 11, 0.15);
+  --accent-emerald: #10b981;
+  --accent-emerald-dim: rgba(16, 185, 129, 0.15);
+  --accent-purple: #a855f7;
+  --accent-purple-dim: rgba(168, 85, 247, 0.15);
 }
 
 /* Custom Cyber Aesthetics */
@@ -81,3 +96,29 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #334155;
 }
+
+/* Glass Panels & Modern Cyber Containers */
+.glass-panel {
+  background: rgba(13, 19, 33, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(51, 65, 85, 0.7);
+}
+
+.argus-panel {
+  background-color: #0e131f;
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+}
+
+.argus-card {
+  background-color: #131929;
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.argus-card:hover {
+  border-color: #00f0ff;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.5), 0 0 15px -2px rgba(0, 240, 255, 0.2);
+}
+

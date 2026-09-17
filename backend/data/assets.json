@@ -1,0 +1,90 @@
+[
+  {
+    "asset_id": "AST-ALPHA-DC01",
+    "entity_id": "CSE-ALPHA",
+    "asset_name": "Primary Domain Controller",
+    "criticality": "CRITICAL",
+    "ip_address": "10.0.1.5",
+    "department": "Core IT"
+  },
+  {
+    "asset_id": "AST-ALPHA-HIST",
+    "entity_id": "CSE-ALPHA",
+    "asset_name": "SCADA Historian Server",
+    "criticality": "CRITICAL",
+    "ip_address": "10.0.2.10",
+    "department": "OT Operations"
+  },
+  {
+    "asset_id": "AST-ALPHA-SCADA",
+    "entity_id": "CSE-ALPHA",
+    "asset_name": "Substation Control Server",
+    "criticality": "CRITICAL",
+    "ip_address": "10.0.2.15",
+    "department": "OT Operations"
+  },
+  {
+    "asset_id": "AST-ALPHA-GW",
+    "entity_id": "CSE-ALPHA",
+    "asset_name": "Perimeter Security Gateway",
+    "criticality": "HIGH",
+    "ip_address": "10.0.0.1",
+    "department": "Network Security"
+  },
+  {
+    "asset_id": "AST-ALPHA-WS01",
+    "entity_id": "CSE-ALPHA",
+    "asset_name": "Engineer Workstation 01",
+    "criticality": "MEDIUM",
+    "ip_address": "10.0.3.44",
+    "department": "Engineering"
+  },
+  {
+    "asset_id": "AST-BETA-DC01",
+    "entity_id": "CSE-BETA",
+    "asset_name": "Domain Controller Beta",
+    "criticality": "CRITICAL",
+    "ip_address": "10.1.1.5",
+    "department": "IT Dept"
+  },
+  {
+    "asset_id": "AST-BETA-EMS",
+    "entity_id": "CSE-BETA",
+    "asset_name": "Energy Management System",
+    "criticality": "CRITICAL",
+    "ip_address": "10.1.2.8",
+    "department": "Grid Control"
+  },
+  {
+    "asset_id": "AST-BETA-WS04",
+    "entity_id": "CSE-BETA",
+    "asset_name": "Operator Terminal 04",
+    "criticality": "MEDIUM",
+    "ip_address": "10.1.3.12",
+    "department": "Operations"
+  },
+  {
+    "asset_id": "AST-GAMMA-DC01",
+    "entity_id": "CSE-GAMMA",
+    "asset_name": "Central Identity Server",
+    "criticality": "CRITICAL",
+    "ip_address": "10.2.1.5",
+    "department": "IT Admin"
+  },
+  {
+    "asset_id": "AST-GAMMA-MON",
+    "entity_id": "CSE-GAMMA",
+    "asset_name": "Reactor Monitoring Node",
+    "criticality": "CRITICAL",
+    "ip_address": "10.2.2.99",
+    "department": "Reactor Operations"
+  },
+  {
+    "asset_id": "AST-GAMMA-WS09",
+    "entity_id": "CSE-GAMMA",
+    "asset_name": "Admin Workstation 09",
+    "criticality": "LOW",
+    "ip_address": "10.2.3.88",
+    "department": "Administration"
+  }
+]

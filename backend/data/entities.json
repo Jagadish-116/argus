@@ -1,0 +1,26 @@
+[
+  {
+    "entity_id": "CSE-ALPHA",
+    "name": "Alpha Power Grid Corp",
+    "sector": "Power & Energy",
+    "total_assets": 145,
+    "reported_kpi_closure_rate": 0.98,
+    "reported_kpi_mttr_mins": 3.8
+  },
+  {
+    "entity_id": "CSE-BETA",
+    "name": "Beta Grid Transmission Ltd",
+    "sector": "Power & Energy",
+    "total_assets": 120,
+    "reported_kpi_closure_rate": 0.82,
+    "reported_kpi_mttr_mins": 14.2
+  },
+  {
+    "entity_id": "CSE-GAMMA",
+    "name": "Gamma Nuclear Infrastructure",
+    "sector": "Nuclear & Energy",
+    "total_assets": 95,
+    "reported_kpi_closure_rate": 0.95,
+    "reported_kpi_mttr_mins": 4.2
+  }
+]

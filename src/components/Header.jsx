@@ -16,7 +16,6 @@ export function Header({
   selectedEntity, 
   onSelectEntity, 
   onOpenExport, 
-  onOpenPitchGuide, 
   onUploadClick 
 }) {
   return (
@@ -34,7 +33,7 @@ export function Header({
               <h1 className="text-xl font-bold tracking-wider text-white font-mono flex items-center gap-1.5">
                 ARGUS
                 <span className="text-xs px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 font-sans border border-cyan-500/30">
-                  SIH 26157
+                  ASSURANCE
                 </span>
               </h1>
             </div>
@@ -82,15 +81,6 @@ export function Header({
             >
               <FileText className="w-3.5 h-3.5" />
               <span>Audit Dossier</span>
-            </button>
-
-            <button
-              onClick={onOpenPitchGuide}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-300 text-xs font-medium transition-all"
-              title="View Judge Q&A and Pitch Guide"
-            >
-              <HelpCircle className="w-3.5 h-3.5" />
-              <span>Pitch Guide & Q&A</span>
             </button>
 
             <button

@@ -26,7 +26,7 @@ export function SupervisoryDossierModal({ entity, isOpen, onClose }) {
 
   const generateMarkdownReport = () => {
     return `# ARGUS SUPERVISORY AUDIT DOSSIER
-**Evaluation Reference:** SIH26157-AUDIT-${entity.id.toUpperCase()}-${Date.now().toString().slice(-6)}
+**Evaluation Reference:** ARGUS-AUDIT-${entity.id.toUpperCase()}-${Date.now().toString().slice(-6)}
 **Date Generated:** ${reportDate}
 **Security Classification:** RESTRICTED // REGULATORY AUDIT USE ONLY
 
