@@ -88,3 +88,16 @@ def main():
 
 if __name__ == "__main__":
     main()
+import os
+import uvicorn
+
+# ... existing checks & vendor verification in run_demo.py ...
+
+if __name__ == "__main__":
+    # Render sets $PORT dynamically; fall back to 8000 for local runs
+    port = int(os.environ.get("PORT", 8000))
+    # 0.0.0.0 allows external traffic; 127.0.0.1 only allows local loopback
+    host = os.environ.get("HOST", "0.0.0.0")
+
+    # Replace your uvicorn.run line with:
+    uvicorn.run("backend.app:app", host=host, port=port, reload=False)
