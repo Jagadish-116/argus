@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: argus-soc-engine
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt && python backend/data_generator.py"
+    startCommand: "uvicorn backend.app:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
